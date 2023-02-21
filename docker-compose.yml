@@ -7,12 +7,6 @@ services:
     image: mysql:5.7
     ports:
       - '3306:3306'
-    environment:
-      MYSQL_HOST: awseb-e-abm2bsdqyz-stack-awsebrdsdatabase-mdf8ksfdul6f.cykwhrr5mxpa.ap-northeast-2.rds.amazonaws.com
-      MYSQL_USERNAME: admin
-      MYSQL_PASSWORD: 12181218
-      MYSQL_DATABASE: myfolio
-      MYSQL_ROOT_PASSWORD: 12181218
 
   app:
     ports:
