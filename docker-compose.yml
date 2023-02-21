@@ -7,10 +7,14 @@ services:
     image: mysql:5.7
     ports:
       - '3306:3306'
+    environment:
+      MYSQL_HOST: 127.0.0.1
+      MYSQL_USERNAME: root
+      MYSQL_PASSWORD: 12181218
+      MYSQL_DATABASE: myfolio
+      MYSQL_ROOT_PASSWORD: 12181218
 
   app:
-    env_file:
-      - .env
     ports:
       - 80:5000
     build: .
