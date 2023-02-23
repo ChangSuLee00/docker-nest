@@ -17,8 +17,7 @@ jobs:
 
       - name: Run tests
         run: npm test
-
-      - env:
+        with:
           NODE_ENV: ${{ secrets.NODE_ENV }}
           PORT: ${{ secrets.PORT }}
           JWT_SECRET: ${{ secrets.JWT_SECRET }}
