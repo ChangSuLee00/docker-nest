@@ -18,12 +18,12 @@ jobs:
       - name: Run tests
         run: npm test
 
-      -env:
-        NODE_ENV: ${{ secrets.NODE_ENV }}
-        PORT: ${{ secrets.PORT }}
-        JWT_SECRET: ${{ secrets.JWT_SECRET }}
-        MYSQL_HOST: ${{ secrets.MYSQL_HOST }}
-        MYSQL_USERNAME: ${{ secrets.MYSQL_USERNAME }}
-        MYSQL_PASSWORD: ${{ secrets.MYSQL_PASSWORD }}
-        MYSQL_ROOT_PASSWORD: ${{ secrets.MYSQL_ROOT_PASSWORD }}
-        MYSQL_DATABASE: ${{ secrets.MYSQL_DATABASE }}
+      - env:
+          NODE_ENV: ${{ secrets.NODE_ENV }}
+          PORT: ${{ secrets.PORT }}
+          JWT_SECRET: ${{ secrets.JWT_SECRET }}
+          MYSQL_HOST: ${{ secrets.MYSQL_HOST }}
+          MYSQL_USERNAME: ${{ secrets.MYSQL_USERNAME }}
+          MYSQL_PASSWORD: ${{ secrets.MYSQL_PASSWORD }}
+          MYSQL_ROOT_PASSWORD: ${{ secrets.MYSQL_ROOT_PASSWORD }}
+          MYSQL_DATABASE: ${{ secrets.MYSQL_DATABASE }}
